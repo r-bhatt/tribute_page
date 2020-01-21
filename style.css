@@ -7,11 +7,11 @@ body {
 }
 
 .title {
+    color: aliceblue;
     font-family: 'Kaushan Script', cursive;
     font-size: 3em;
-}
-
-.img-div {
+    position: absolute;
+    right: 10%;
 }
 
 img {
@@ -19,6 +19,27 @@ img {
 }
 
 .tribute_info {
-    font-family: 'Exo 2', sans-serif;
     font-size: 1.2em;
+    font-family: 'Exo 2', sans-serif;
+}
+
+@media only screen and (min-width : 780px) {
+    .tribute_info {
+        color: aliceblue;
+        position: absolute;
+        width: 33%;
+        right: 10%;
+        text-align: right;
+        top: 10%;
+    }
+}
+
+@media only screen and (min-width : 1020px) {
+    .title {
+        font-size: 3.8em;
+    }
+
+    .tribute_info {
+        font-size: 1.7em;
+    }
 }
